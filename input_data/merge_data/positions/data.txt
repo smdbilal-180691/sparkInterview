@@ -1,0 +1,3 @@
+pos_no|mail_id|number_of_shares|amount|share_name|asset_name
+p01|chimpi@gmail.com|7|7000|RIL|
+p02|yz@gmail.com|150|1500|IRCTC|land

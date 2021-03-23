@@ -1,0 +1,3 @@
+trade_no|mail_id|amount|number_of_shares|share_name
+t01|chimpi@gmail.com|7000|7|RIL
+t02|yz@gmail.com|1500|150|IRCTC

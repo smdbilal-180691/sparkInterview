@@ -17,7 +17,7 @@ object jsonColHandling {
                 .option("escape", "\"")
                 .option("multiLine",true)
                 .option("sep", "|")
-                .csv("G:\\Spark_Interview_inputs\\json_col_handling")
+                .csv("input_data\\json_cols")
     
     println("The input df is ")
     in_df.show(false)

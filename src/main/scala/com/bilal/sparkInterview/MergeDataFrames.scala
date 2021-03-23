@@ -12,19 +12,19 @@ object MergeDataFrames {
     spark.sparkContext.setLogLevel("ERROR")
     
     var trade_df = spark.read.option("header", true)
-                    .option("sep", "|").csv("G:\\Spark_Interview_inputs\\Merge dataframes\\trade")
+                    .option("sep", "|").csv("input_Data\\merge_data\\trade")
     
     println("The trade DF is")
     trade_df.show(false)
     
     var position_df = spark.read.option("header", true).option("sep", "|")
-                       .csv("G:\\Spark_Interview_inputs\\Merge dataframes\\positions")
+                       .csv("input_Data\\merge_data\\positions")
 
     println("The position DF is")
     position_df.show(false)
     
     var asset_df = spark.read.option("header",true).option("sep", "|")
-                   .csv("G:\\Spark_Interview_inputs\\Merge dataframes\\assets")
+                   .csv("input_Data\\merge_data\\assets")
 
     println("The asset DF is")
     asset_df.show(false)
