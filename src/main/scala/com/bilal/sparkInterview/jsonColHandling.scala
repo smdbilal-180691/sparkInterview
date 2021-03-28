@@ -64,7 +64,8 @@ object jsonColHandling {
     println("*******************************************************************")
     println("***************************Method 2********************************")
     println("*******************************************************************")
-    val x = in_df.select("request").alias("jsonCol").rdd.map(_.get(0)).collect().toList.map(_.toString())
+    val x = in_df
+            .select("request").alias("jsonCol").rdd.map(_.get(0)).collect().toList.map(_.toString())
     val y = spark.sparkContext.parallelize(x)
     val x_sch = spark.read.json(y).schema
     println(x_sch)
