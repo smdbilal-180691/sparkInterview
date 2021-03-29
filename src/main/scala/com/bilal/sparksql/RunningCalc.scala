@@ -63,5 +63,17 @@ object RunningCalc {
               ) running_total_dept
               from rundata
               """).show
+    
+    println("Use lag function for amount for every id and department")
+    spark.sql("""
+              select *,lag(amount,1,0) over (partition by id,dept order by id) lag_amt
+              from rundata
+              """).show
+    
+    println("Use lead function for amount for every id and department")
+    spark.sql("""
+              select *,lead(amount,1,0) over (partition by id,dept order by id) lead_amt
+              from rundata
+              """).show
   }
 }
