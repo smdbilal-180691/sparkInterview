@@ -1,0 +1,3 @@
+Diff between distinct and dropDuplicates:
+Distinct will check if the entire row is duplicate and will drop those rows.
+dropDuplicates allows you to pass columns as parameters and it will drop the rows which have duplicate of subset of cols

@@ -1,0 +1,10 @@
+id,name,amount,dept
+1,abc,100,IT
+1,abc,200,Mgt
+2,bcd,100,IT
+2,bcd,100,Mgt
+2,bcd,100,IT
+3,cde,400,IT
+3,cde,400,IT
+4,efg,600,Mgt
+4,efg,600,IT
