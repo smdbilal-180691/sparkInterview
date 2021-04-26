@@ -25,8 +25,11 @@ object PostgrePropFile {
     
     val in = spark.read.jdbc(url, table, columnName, lowerBound, upperBound, numPartitions, connectionProperties)
     
-    in.show
-    in.select("*").withColumn("part_id", spark_partition_id()).show
+    in.show(false)
+    in.select("*").withColumn("part_id", spark_partition_id()).show(false)
+    in.printSchema
+    
+   
     
   }
 }
